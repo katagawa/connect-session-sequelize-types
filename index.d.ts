@@ -12,7 +12,7 @@ declare interface Data {
 
 declare interface SequelizeStoreOptions {
 	db: Sequelize.Sequelize
-	table?: Sequelize.Model<any, any>
+	table?: Sequelize.Model<any, any> | string
 	extendDefaultFields?: (defaults: DefaultFields, session: any) => Data
 	checkExpirationInterval?: number
 	expiration?: number
